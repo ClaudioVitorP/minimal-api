@@ -1,5 +1,6 @@
 🚗 Minimal API de Veículos
 Uma API REST moderna desenvolvida em ASP.NET Core 9 seguindo os princípios de Clean Architecture e utilizando Minimal APIs para gerenciamento de veículos e administradores.
+
 🛠️ Tecnologias Utilizadas
 Backend
 
@@ -33,37 +34,6 @@ Repository Pattern - Implementado através dos serviços
 Dependency Injection - Injeção de dependência nativa do .NET
 DTOs (Data Transfer Objects) - Transferência segura de dados
 Model Views - Apresentação estruturada dos dados
-
-📁 Estrutura do Projeto
-minimal-api/
-├── 📂 Dominio/
-│   ├── 📂 DTOs/                    # Data Transfer Objects
-│   │   ├── AdministradorDTO.cs
-│   │   ├── LoginDTO.cs
-│   │   └── VeiculoDTO.cs
-│   ├── 📂 Entidades/               # Entidades de domínio
-│   │   ├── Administrador.cs
-│   │   └── Veiculo.cs
-│   ├── 📂 Enuns/                   # Enumerações
-│   │   └── Perfil.cs
-│   ├── 📂 Interfaces/              # Contratos de serviço
-│   │   ├── IAdministradorServico.cs
-│   │   └── IVeiculoServico.cs
-│   ├── 📂 ModelViews/              # Modelos de apresentação
-│   │   ├── AdministradorLogado.cs
-│   │   ├── AdministradorModelView.cs
-│   │   ├── ErrosDeValidacao.cs
-│   │   └── Home.cs
-│   └── 📂 servicos/                # Implementação dos serviços
-│       ├── AdministradorServico.cs
-│       └── VeiculoServico.cs
-├── 📂 Infraestrutura/              # Camada de infraestrutura
-│   └── DbContexto.cs               # Contexto do Entity Framework
-├── 📂 Migrations/                  # Migrações do banco de dados
-└── Program.cs                      # Configuração da aplicação
-⚡ Características Principais
-🔐 Sistema de Autenticação
-
 Login baseado em JWT com roles (Administrador/Editor)
 Tokens com expiração configurável
 Autorização granular por endpoints
