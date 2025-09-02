@@ -10,9 +10,9 @@ public class DbContexto : DbContext
     {
         _configuracaoAppSettings = configuracaoAppSettings;
     }
-    public DbSet<Administrador> Administradores { get; set; } = default;
+    public DbSet<Administrador> Administradores { get; set; } = null!;
 
-    public DbSet<Veiculo> Veiculos { get; set; } = default;
+    public DbSet<Veiculo> Veiculos { get; set; } = null!;
 
     protected override void OnModelCreating(ModelBuilder modelBuider)
     {
